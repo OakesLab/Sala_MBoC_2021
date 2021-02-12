@@ -2,8 +2,8 @@
 
 These files represent sample data and example Jupyter notebooks for the analyses performed in the following manuscript:
 
-RhoA mediates stress fiber strain site recognition by the LIM protein testin
-Sala S, Oakes PW
+RhoA mediates stress fiber strain site recognition by the LIM protein testin<br>
+Sala S, Oakes PW<br>
 bioRxiv: https://www.biorxiv.org/content/10.1101/2021.01.21.427693v1
 
 Example data sets can be found here:
