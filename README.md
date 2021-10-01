@@ -1,4 +1,4 @@
-# Sala_Testin_Manuscript
+# Sala_MBoC_2021
 
 These files represent sample data and example Jupyter notebooks for the analyses performed in the following manuscript:
 
