@@ -50,7 +50,10 @@ def parse_XML(XML_filename):
     frame_interval = np.mean(np.diff(time_points))
     
     # get the detector
-    camera = XML_data.OME.Image.Pixels.Channel[0].DetectorSettings['ID']
+    if len(XML_data.OME.Image.Pixels.Channel) > 1:
+        camera = XML_data.OME.Image.Pixels.Channel[0].DetectorSettings['ID']
+    else:
+        camera = XML_data.OME.Image.Pixels.Channel.DetectorSettings['ID']
     if camera == 'Detector:0':
         camera_name = 'Prime'
         camera_pixelsize = 11.0
