@@ -475,11 +475,11 @@ def flat_field_correct_image(image, camera, magnification, channel, def_focus = 
     # check if the definite focus is engaged
     if def_focus:
         # read in dark image and flat field image
-        dark_image = io.imread(base_path + 'Darkfield_Images/' + 'Darkfield_' + camera + '_DF_' + channel +'.tif')
-        flat_field_image = io.imread(base_path + 'Flatfield_Images/' + 'Flatfield_' + camera + '_DF_' + str(magnification) + 'X_' + channel + '.tif')
+        dark_image = io.imread('Flatfield_correction_images/' + 'Darkfield_' + camera + '_DF_' + channel +'.tif')
+        flat_field_image = io.imread('Flatfield_correction_images/' + 'Flatfield_' + camera + '_DF_' + str(magnification) + 'X_' + channel + '.tif')
     else:
-        dark_image = io.imread(base_path + 'Darkfield_Images/' + 'Darkfield_' + camera + '.tif')
-        flat_field_image = io.imread(base_path + 'Flatfield_Images/' + 'Flatfield_' + camera + '_' + str(magnification) + 'X_' + channel + '.tif')
+        dark_image = io.imread('Flatfield_correction_images/' + 'Darkfield_' + camera + '.tif')
+        flat_field_image = io.imread('Flatfield_correction_images/' + 'Flatfield_' + camera + '_' + str(magnification) + 'X_' + channel + '.tif')
         
     # check if the image is a stack
     if len(image.shape) > 2:
